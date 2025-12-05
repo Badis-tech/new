@@ -3,14 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://badis-tech.github.io/snake",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@rollup/pluginutils": "^5.3.0",
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.27",
     "tailwindcss": "^3.3.3",
     "vite": "^4.3.0",
